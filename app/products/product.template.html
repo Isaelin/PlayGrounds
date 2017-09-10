@@ -43,7 +43,7 @@
 		<br /> <br />
 
 		<form *ngIf="productForm">
-			<h2>Add New Product</h2>
+			<h2>Add New PlayGround</h2>
 			<p>
 				ID: <input type="text" name="id" [(ngModel)]="newProduct.id" />
 			</p>
@@ -55,8 +55,20 @@
 					[(ngModel)]="newProduct.description" />
 			</p>
 			<p>
-				Price: <input type="text" name="price"
-					[(ngModel)]="newProduct.price" />
+				Address: <input type="text" name="address"
+					[(ngModel)]="newProduct.address" />
+			</p>
+			<p>
+				Locality: <input type="text" name="locality"
+					[(ngModel)]="newProduct.locality" />
+			</p>
+			<p>
+				State: <input type="text" name="state"
+					[(ngModel)]="newProduct.state" />
+			</p>
+			<p>
+				Country: <input type="text" name="country"
+					[(ngModel)]="newProduct.country" />
 			</p>
 			<p>
 				<button type="button" class="btn btn-primary"
@@ -80,8 +92,20 @@
 					[(ngModel)]="editedProduct.description" />
 			</p>
 			<p>
-				Price: <input type="text" name="price"
-					[(ngModel)]="editedProduct.price" />
+				Address: <input type="text" name="address"
+					[(ngModel)]="editedProduct.address" />
+			</p>
+			<p>
+				Locality: <input type="text" name="locality"
+					[(ngModel)]="editedProduct.locality" />
+			</p>
+			<p>
+				State: <input type="text" name="state"
+					[(ngModel)]="editedProduct.state" />
+			</p>
+			<p>
+				Country: <input type="text" name="country"
+					[(ngModel)]="editedProduct.country" />
 			</p>
 			<p>
 				<button type="button" class="btn btn-primary"
