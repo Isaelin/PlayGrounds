@@ -43,76 +43,87 @@
 		<br /> <br />
 
 		<form *ngIf="productForm">
-			<h2>Add New PlayGround</h2>
-			<p>
-				ID: <input type="text" name="id" [(ngModel)]="newProduct.id" />
-			</p>
-			<p>
-				Name: <input type="text" name="name" [(ngModel)]="newProduct.name" />
-			</p>
-			<p>
-				Description: <input type="text" name="description"
-					[(ngModel)]="newProduct.description" />
-			</p>
-			<p>
-				Address: <input type="text" name="address"
-					[(ngModel)]="newProduct.address" />
-			</p>
-			<p>
-				Locality: <input type="text" name="locality"
-					[(ngModel)]="newProduct.locality" />
-			</p>
-			<p>
-				State: <input type="text" name="state"
-					[(ngModel)]="newProduct.state" />
-			</p>
-			<p>
-				Country: <input type="text" name="country"
-					[(ngModel)]="newProduct.country" />
-			</p>
-			<p>
+			<h2>Add New Playground</h2>
+			<table>
+			<tr>
+				<th>ID:</th> 
+				<th><input type="text" name="id" [(ngModel)]="newProduct.id" /></th>
+			</tr>
+			<tr>
+				<th>Name:</th>
+				<th><input type="text" name="name" [(ngModel)]="newProduct.name" /></th>
+			</tr>
+			<tr>
+				<th>Description:</th>
+				<th><input type="text" name="description" [(ngModel)]="newProduct.description" /></th>
+			</tr>
+			<tr>
+				<th>Address:</th>
+				<th><input type="text" name="address" [(ngModel)]="newProduct.address" /></th>
+			</tr>
+			<tr>
+				<th>Locality:</th>
+				<th><input type="text" name="locality" [(ngModel)]="newProduct.locality" /></th>
+			</tr>
+			<tr>
+				<th>State:</th>
+				<th><input type="text" name="state" [(ngModel)]="newProduct.state" /></th>
+			</tr>
+			<tr>
+				<th>Country:</th>
+				<th><input type="text" name="country" [(ngModel)]="newProduct.country" /></th>
+			</tr>
+			<br>
+			<tr>
 				<button type="button" class="btn btn-primary"
 					(click)="saveProduct(newProduct)">Submit</button>
 				<button type="button" class="btn btn-warning"
 					(click)="cancelNewProduct()">Cancel</button>
-			</p>
+			</tr>
+			<br>
+			</table>
 		</form>
 
 		<form *ngIf="editProductForm">
-			<h2>Edit Product Details</h2>
-			<p>
-				ID: <input type="text" name="id" [(ngModel)]="editedProduct.id" />
-			</p>
-			<p>
-				Name: <input type="text" name="name"
-					[(ngModel)]="editedProduct.name" />
-			</p>
-			<p>
-				Description: <input type="text" name="description"
-					[(ngModel)]="editedProduct.description" />
-			</p>
-			<p>
-				Address: <input type="text" name="address"
-					[(ngModel)]="editedProduct.address" />
-			</p>
-			<p>
-				Locality: <input type="text" name="locality"
-					[(ngModel)]="editedProduct.locality" />
-			</p>
-			<p>
-				State: <input type="text" name="state"
-					[(ngModel)]="editedProduct.state" />
-			</p>
-			<p>
-				Country: <input type="text" name="country"
-					[(ngModel)]="editedProduct.country" />
-			</p>
-			<p>
+			<h2>Edit Playground Information</h2>
+			<table>
+			<tr>
+				<th>ID:</th>
+				<th><input type="text" name="id" [(ngModel)]="editedProduct.id" /></th>
+			</tr>
+			<tr>
+				<th>Name:</th>
+				<th><input type="text" name="name" [(ngModel)]="editedProduct.name" /></th>
+			</tr>
+			<tr>
+				<th>Description:</th>
+				<th><input type="text" name="description" [(ngModel)]="editedProduct.description" /></th>
+			</tr>
+			<tr>
+				<th>Address:</th>
+				<th><input type="text" name="address" [(ngModel)]="editedProduct.address" /></th>
+			</tr>
+			<tr>
+				<th>Locality:</th>
+				<th><input type="text" name="locality" [(ngModel)]="editedProduct.locality" /></th>
+			</tr>
+			<tr>
+				<th>State:</th>
+				<th><input type="text" name="state" [(ngModel)]="editedProduct.state" /></th>
+			</tr>
+			<tr>
+				<th>Country:</th>
+				<th><input type="text" name="country" [(ngModel)]="editedProduct.country" /></th>
+			</tr>
+			<br>
+			<tr>
 				<button type="button" class="btn btn-primary"
 					(click)="updateProduct(editedProduct)">Submit</button>
 				<button type="button" class="btn btn-warning"
 					(click)="cancelEdits()">Cancel</button>
-			</p>
+			</tr>
+			<br>
+			</table>
 		</form>
 	</div>
 </div>
